@@ -18,3 +18,4 @@
 - Netflix GPT
     - Search Bar
     - Movie suggestions
+    
