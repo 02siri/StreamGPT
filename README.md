@@ -2,7 +2,8 @@
 - Create React App 
 - Configured Tailwind CSS 
 - Header
-- Login Form 
+- Login Form [ Can use Formik library for form building]
+- Sign Up Form
 
 # Features:
 - Login/Sign Up
