@@ -2,8 +2,11 @@
 - Create React App 
 - Configured Tailwind CSS 
 - Header
+- Routing of App
 - Login Form [ Can use Formik library for form building]
 - Sign Up Form
+- Form validation
+    - useRef hook
 
 # Features:
 - Login/Sign Up

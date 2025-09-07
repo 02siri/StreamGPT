@@ -1,12 +1,28 @@
 //rafce -> react arrow function component export
+//use Ref hook : lets you reference a value that's not needed for rendering
 import Header from "./Header";
 import { useState } from "react";
+import { useRef } from "react";
+import {checkValidData} from "../utils/validate";
 
 const Login =() =>{
-const [isSignInForm, setIsSignInForm]=useState(true);
+const [isSignInForm, setIsSignInForm] = useState(true);
+const [errorMessage, setErrorMessage] = useState(null);
+
+const name = useRef(null);
+const number = useRef(null);
+const email = useRef(null);
+const password = useRef(null);
 
 const toggleSignInForm = ()=>{
     setIsSignInForm(!isSignInForm);
+};
+
+const handleButtonClick = () =>{
+    //validate form data 
+    //logic in /utils/validate.js
+   const message = checkValidData(email.current.value, password.current.value, name.current.value, number.current.value);
+   setErrorMessage(message);
 }
 
     return <div>
@@ -17,17 +33,19 @@ const toggleSignInForm = ()=>{
         </img>
         </div>
 
-        <form 
-        className="w-4/12 absolute p-12 bg-black my-36 mx-auto right-0 left-0 text-white rounded-lg bg-opacity-80">
+        <form onSubmit={(e)=>e.preventDefault()} 
+        className="w-4/12 absolute p-9 bg-black my-32 mx-auto right-0 left-0 text-white rounded-lg bg-opacity-80">
             <h1 className="font-bold text-3xl py-4">{isSignInForm? "Sign In" : "Sign Up"}</h1>
             {!isSignInForm && ( <>
             <input 
+            ref = {name}
             type="text" 
             placeholder="Name" 
             className = "p-4 my-4 w-full bg-gray-700"> 
             </input>
             
             <input 
+            ref={number}
             type="text" 
             placeholder="Phone Number" 
             className = "p-4 my-4 w-full bg-gray-700"> 
@@ -35,17 +53,23 @@ const toggleSignInForm = ()=>{
             </>
             )}
             <input 
+            ref={email}
             type="text" 
             placeholder="Email Address" 
             className = "p-4 my-4 w-full bg-gray-700"> 
             </input>
             <input 
+            ref={password}
             type="password" 
             placeholder="Password" 
             className = "p-4 my-4 w-full bg-gray-700">
             </input>
+
+            <p className="text-red-500 underline font-bold text-lg py-2">{errorMessage}</p>
+
             <button 
-            className="p-4 my-6 bg-red-700 w-full rounded-lg">
+            className="p-4 my-6 bg-red-700 w-full rounded-lg" 
+            onClick={handleButtonClick}>
             {isSignInForm? "Sign In" : "Sign Up"}</button>
 
             <p className="py-4 cursor-pointer underline" onClick = {toggleSignInForm}>{isSignInForm? "New to Netflix? Sign Up Now!" : "Already registered? Sign In Now"}</p>
