@@ -1,4 +1,4 @@
-# Netflix GPT
+# Stream GPT
 - Create React App 
 - Configured Tailwind CSS 
 - Header
@@ -27,7 +27,7 @@
         - Movie suggestions 
             - Movie Lists * N (Lot of)
 
-- Netflix GPT
+- Stream GPT
     - Search Bar
     - Movie suggestions
 
