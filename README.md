@@ -7,11 +7,13 @@
 - Sign Up Form
 - Form validation
     - useRef hook
-- Firebase Deployment:
+- Firebase Setup & Deployment:
     0. Install Firebase CLI: npm install -g firebase-tools 
     1. Firebase login - firebase login
     2. Initialise Firebase - firebase init -> select Hosting
     3. Deploy Command - firebase deploy
+- Create SignUp User Account 
+
 # Features:
 - Login/Sign Up
     - Sign In/up Form
