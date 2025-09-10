@@ -68,10 +68,12 @@ const handleButtonClick = () =>{
 
     return <div>
         <Header/>
-        <div className="absolute">
-        <img src = "https://assets.nflxext.com/ffe/siteui/vlv3/8d617e19-3c3c-4c28-8998-c9b14dbc7200/web/AU-en-20250901-TRIFECTA-perspective_f4085fc6-87a7-4a5d-9d0a-8aa88de40aa9_large.jpg"
-        alt = "logo">
-        </img>
+        <div className="absolute inset-0 w-full h-full">
+            <img 
+              src="/bg.png" 
+              alt="bg" 
+              className="w-full h-full object-cover" 
+            />
         </div>
 
         <form onSubmit={(e)=>e.preventDefault()} 
@@ -113,7 +115,7 @@ const handleButtonClick = () =>{
             onClick={handleButtonClick}>
             {isSignInForm? "Sign In" : "Sign Up"}</button>
 
-            <p className="py-4 cursor-pointer underline" onClick = {toggleSignInForm}>{isSignInForm? "New to Netflix? Sign Up Now!" : "Already registered? Sign In Now"}</p>
+            <p className="py-4 cursor-pointer underline" onClick = {toggleSignInForm}>{isSignInForm? "New to StreamGPT? Sign Up Now!" : "Already registered? Sign In Now"}</p>
         </form>
     </div>
 };
