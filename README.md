@@ -11,9 +11,16 @@
     0. Install Firebase CLI: npm install -g firebase-tools 
     1. Firebase login - firebase login
     2. Initialise Firebase - firebase init -> select Hosting
+        2.1 : Build : npm run build
     3. Deploy Command - firebase deploy
 - Create SignUp User Account 
-
+- Implement Sign In User API 
+- Created Redux Store with User Slice 
+    - npm i -D @reduxjs/toolkit
+    - npm i react-redux
+- Implemented Sign Out 
+- Update Profile API call
+- Fetch movies from TMDB 
 # Features:
 - Login/Sign Up
     - Sign In/up Form
