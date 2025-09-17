@@ -6,9 +6,12 @@ import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+
+//when using React.StrictMode -> components get rendered TWICE, but only locally. In production: it would only render once
+//React.StrictMode -> React renders twice to check for any inconsistencies in your rendering cycle.
+  // <React.StrictMode>
     <App />
-  </React.StrictMode>
+  // </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

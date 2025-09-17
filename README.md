@@ -20,7 +20,21 @@
     - npm i react-redux
 - Implemented Sign Out 
 - Update Profile API call
-- Fetch movies from TMDB 
+- BugFix : Sign up user display name and profile picture update
+- BugFix : If the user is not logged in - Redirect /browse to Login Page and vice-versa
+- Unsubscribed to the onAuthStateChanged callback
+- Add hardcoded values to the /utils/constants file
+- Register for TMDB API & create a new app & get API access token
+- Go to documentation -> get data from TMDB 'Now playing' movies list
+- Custom Hook for Now Playing Movies
+- Create movieSlice 
+- Update the store with movies data
+- Planning for MainContainer and Secondary Container
+- Fetch data for trailer video
+- Update store with trailer video data
+- Embedded the YT video and make it autoplay and mute
+- Tailwind classes to make main container look as close as Netflix 
+
 # Features:
 - Login/Sign Up
     - Sign In/up Form
