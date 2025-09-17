@@ -34,6 +34,12 @@
 - Update store with trailer video data
 - Embedded the YT video and make it autoplay and mute
 - Tailwind classes to make main container look as close as Netflix 
+- Build Secondary Component
+- Buid Movie List 
+- Build Movie Card 
+- TMDB Image CDN URL 
+- Made Browse Page UI with Tailwind CSS 
+- usePopularMovies Custom Hook 
 
 # Features:
 - Login/Sign Up
