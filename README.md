@@ -41,7 +41,7 @@
 - Made Browse Page UI with Tailwind CSS 
 - usePopularMovies Custom Hook 
 - Hooks and APIS for trending, comedy, thriller and romance movies 
-
+- GPT Search Feature
 # Features:
 - Login/Sign Up
     - Sign In/up Form
