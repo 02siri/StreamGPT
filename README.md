@@ -40,6 +40,7 @@
 - TMDB Image CDN URL 
 - Made Browse Page UI with Tailwind CSS 
 - usePopularMovies Custom Hook 
+- Hooks and APIS for trending, comedy, thriller and romance movies 
 
 # Features:
 - Login/Sign Up
