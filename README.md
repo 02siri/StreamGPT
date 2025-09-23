@@ -42,6 +42,10 @@
 - usePopularMovies Custom Hook 
 - Hooks and APIS for trending, comedy, thriller and romance movies 
 - GPT Search Feature
+- GPT Search Bar 
+- (FEATURE) Multi-language Feature
+- Integrate GPT APIs (get Open AI key)
+
 # Features:
 - Login/Sign Up
     - Sign In/up Form

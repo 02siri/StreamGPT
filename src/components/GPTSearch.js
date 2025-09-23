@@ -3,7 +3,7 @@ import GPTMovieSuggestions from "./GPTMovieSuggestions";
 
 const GPTSearch = () => {
 return <div>
-    <div className="absolute -z-10 inset-0 w-full h-full">
+    <div className="fixed -z-10 inset-0 w-full h-full">
             <img 
               src="/bg.png" 
               alt="bg" 
