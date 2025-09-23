@@ -2,7 +2,7 @@ import GPTSearchBar from "./GPTSearchBar";
 import GPTMovieSuggestions from "./GPTMovieSuggestions";
 
 const GPTSearch = () => {
-return <div>
+return <> 
     <div className="fixed -z-10 inset-0 w-full h-full">
             <img 
               src="/bg.png" 
@@ -10,15 +10,11 @@ return <div>
               className="w-full h-full object-cover" 
             />
         </div>
-
-    <GPTSearchBar />
-    <GPTMovieSuggestions />
-
-    {/**
-     * GPT Search bar
-     * GPT Movie Suggestions
-     */}
-</div>
+  <div className="pt-[55%] md:p-0">
+      <GPTSearchBar />
+      <GPTMovieSuggestions />
+  </div>
+</>
 };
 
 export default GPTSearch;

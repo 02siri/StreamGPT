@@ -53,16 +53,19 @@ const handleSignOut = () => {
     };
 
 return (
-<div className="absolute w-screen h-20 px-5 bg-gradient-to-b from-black z-10 flex justify-between items-center">
+  //for responsiveness
+    //by default: mobile
+    //sm: if the screen size is greater than small devices (tab), and md: will apply for desktop
+<div className="absolute w-screen h-20 -mt-10 md:mt-0 md:px-5 bg-gradient-to-b from-black z-10 flex flex-col md:flex-row md:justify-between items-center">
 
     <img
-    className="w-44"
+    className="w-44 mx-auto md:mx-0"
     src = {LOGO}
     alt = "logo">
     </img>
 
     {user && (
-        <div className="flex items-center gap-2"> 
+        <div className="flex justify-between items-center gap-2 -mt-9 md:mt-10"> 
 
       {showGPTSearch && ( 
         <select className="p-2 m-2 bg-gray-900 text-white" onChange={handleLangChange}>
@@ -73,12 +76,11 @@ return (
         )}
         
         <button onClick = {handleGPTSearchClick}
-        className="py-2 px-4 mx-4 my-2 bg-purple-800 text-white rounded-md ">
+        className="py-2 px-4 mx-4 md:my-2 bg-purple-800 text-white text-sm md:text-lg rounded-md ">
           {showGPTSearch ? "Browse Page" : "GPT Search"}
           </button>
-        
-        <img alt="userIcon" src={USER_ICON} className="w-15 h-20"></img>
-        <button onClick={handleSignOut} className="font-bold text-white">(Sign Out)</button>
+      
+        <button onClick={handleSignOut} className="font-bold text-black text-md m-2 p-2 rounded-md bg-white opacity-40">Sign Out</button>
     </div>
     )}
     </div>);

@@ -44,7 +44,14 @@
 - GPT Search Feature
 - GPT Search Bar 
 - (FEATURE) Multi-language Feature
-- Integrate GPT APIs (get Open AI key)
+- Get Gemini API Key
+- Gemini Search API call
+- Fetched Gemini movie suggestions from TMDB
+- created gptSlice, added data
+- Reused Movie List component to make movie suggestion container
+- Created .env file and adding to .gitignore
+- Memoization
+- Made site responsive
 
 # Features:
 - Login/Sign Up

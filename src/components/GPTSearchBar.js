@@ -69,8 +69,8 @@ const GPTSearchBar = () => {
 
         };
 
-    return (<div className="pt-[10%] flex justify-center">
-    <form className="w-1/2 bg-transparent grid grid-cols-12 rounded-xl" 
+    return (<div className="-mt-7 md:pt-[10%] flex justify-center">
+    <form className="w-full md:w-1/2 bg-transparent grid grid-cols-12 rounded-xl" 
     //precentDefault -> not refreshing the page but giving error
     onSubmit={(e) => e.preventDefault()}>
         <input 
@@ -80,7 +80,7 @@ const GPTSearchBar = () => {
             placeholder={lang[langKey].searchPlaceholder}/>
 
         <button 
-        className="col-span-3 m-4 py-2 px-4 bg-red-600 text-white rounded-xl"
+        className="col-span-3 m-5 md:m-4 py-1 md:py-4 px-1 md:px-4 bg-red-700 text-sm md:text-lg text-white rounded-md md:rounded-xl"
         onClick={handleGPTSearchClick}>
             {lang[langKey].search}
             </button>
