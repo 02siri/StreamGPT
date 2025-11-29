@@ -45,7 +45,7 @@ const GPTSearchBar = () => {
         });
 
             const response = await result.response;
-            const text = response.text();
+            const text = await response.text();
 
         // Parse the JSON string into a JavaScript object
         const movieData = JSON.parse(text);
