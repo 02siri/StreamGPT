@@ -5,7 +5,7 @@
 
 https://streamgpt-fbfdc.web.app
 
-A smart, interactive movie-streaming application inspired by Netflix, built with **React, Redux, Firebase**, and integrated with **TMDB** and **Gemini AI** to provide **AI-powered movie recommendations**.
+A smart, interactive movie-streaming application, built with **React, Redux, Firebase**, and integrated with **TMDB** and **Gemini AI** to provide **AI-powered movie recommendations**.
 
 StreamGPT delivers a seamless, modern streaming UI with dynamic trailers, curated content sections, secure authentication, and an intelligent GPT-style movie search system.
 
@@ -107,3 +107,4 @@ StreamGPT is hosted using Firebase Hosting, which provides fast, secure, and glo
 ```bash
   firebase deploy
 ```
+
